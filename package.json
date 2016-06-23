@@ -1,7 +1,7 @@
 {
-  "name": "client",
+  "name": "Stochi",
   "version": "1.0.0",
-  "description": "angular scaffold client part",
+  "description": "angular base web page",
   "main": "gulpfile.js",
   "dependencies": {
     "bower": "^1.6.9",
@@ -27,6 +27,6 @@
     "<div",
     "ui-view></div>"
   ],
-  "author": "viktor zavala",
-  "license": "ISC"
+  "author": "Ricardo and Rene",
+  "license": "none"
 }

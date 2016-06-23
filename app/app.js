@@ -1,27 +1,23 @@
-var app = angular.module('AngularScaffold', ['ui.router', 'ngStorage', 'AngularScaffold.Services', 'AngularScaffold.Controllers']);
+var app = angular.module('Stochi', ['ui.router', 'ngStorage', 'Stochi.Services', 'Stochi.Controllers']);
 
-angular.module('AngularScaffold.Controllers', []);
-angular.module('AngularScaffold.Services', []);
+angular.module('Stochi.Controllers', []);
+angular.module('Stochi.Services', []);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('login');
+	$urlRouterProvider.otherwise('index');
 	$stateProvider
-        .state('login', {
-            url: '/login',
-            templateUrl: '/views/login.html',
-            controller: 'loginController',
-            name: "login",
-            data: {
-              pageTitle: 'LogIn'
-            }
-        })
-        .state('productos', {
-            url: '/productos',
-            templateUrl: '/views/producto.html',
-            controller: 'productosController',
-            name: "productos",
-            data: {
-              pageTitle: 'LogIn'
-            }
-        })
+	.state('index', {
+		url: '/index',
+		templateUrl: '/views/index.html',
+		controller: 'loginController'
+	})
+	.state('productos', {
+		url: '/productos',
+		templateUrl: '/views/producto.html',
+		controller: 'productosController',
+		name: "productos",
+		data: {
+			pageTitle: 'LogIn'
+		}
+	})
 }]);

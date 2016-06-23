@@ -1,4 +1,11 @@
-/* custom template */
+#usuario_name{
+  background-color: transparent;
+  border-bottom-style: none;
+
+}
+#bodyproducto{
+    padding: 30px;
+}
 html, body {
    height: 100%;
    font-family:verdana,arial,sans-serif;
@@ -54,7 +61,7 @@ hr {
 }
 
 .box {
-  	bottom: 0; /* increase for footer use */
+  	bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
@@ -131,15 +138,6 @@ hr {
   text-shadow:0 0 1px;
   border-radius:2px;
 }
-#sidebar-footer {
-  background-color:#444;
-  position:absolute;
-  bottom:5px;
-  padding:5px;
-}
-#footer {
-  margin-bottom:20px;
-}
 
 /* bootstrap overrides */
 
@@ -164,14 +162,14 @@ h1,h2,h3 {
     text-shadow:0 0 1px rgba(0,0,0,.3);
 }
 .form-control {
-	
+
 }
 
 .panel textarea, .well textarea, textarea.form-control
 {
    resize: none;
 }
-  
+
 .badge{
    color:#3B5999;
    background-color:#fff;
@@ -180,7 +178,7 @@ h1,h2,h3 {
    background-color:#3B5999;
    color:#fff;
 }
-    
+
 .jumbotron {
   background-color:transparent;
 }

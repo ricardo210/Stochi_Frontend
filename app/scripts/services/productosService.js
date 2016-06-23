@@ -1,7 +1,7 @@
-angular.module('AngularScaffold.Services').factory('productoService', ['$http',
+angular.module('Stochi.Services').factory('productoService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		var baseUrl = 'https://angular-scaffold-backend.herokuapp.com/';
+		var baseUrl = 'http://localhost:8000/';
 		return {
 				Getproducto: function(){
 					return $http.get(baseUrl + "v1/producto");

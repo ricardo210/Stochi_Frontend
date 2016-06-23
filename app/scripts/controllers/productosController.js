@@ -1,6 +1,6 @@
-angular.module('AngularScaffold.Controllers')
+angular.module('Stochi.Controllers')
   .controller('productosController', ['productoService', '$scope', '$rootScope', '$sessionStorage',  function (productoService, $scope, $rootScope, $sessionStorage) {
-    
+
     $scope.productoArreglo = [];
 
     $scope.loadProducto =  function(){
@@ -17,7 +17,7 @@ angular.module('AngularScaffold.Controllers')
       windowHeight = $(window).innerHeight();
       $('#bodyProducto').css('min-height', windowHeight);
     };
-    setHeight();  
+    setHeight();
 
     $(window).resize(function() {
       setHeight();
