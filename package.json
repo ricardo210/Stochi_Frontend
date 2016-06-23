@@ -26,10 +26,7 @@
     "type": "git",
     "url": "<div class=\"container\">"
   },
-  "keywords": [
-    "<div",
-    "ui-view></div>"
-  ],
+  "keywords":[],
   "author": "Ricardo and Rene",
   "license": "none"
 }
