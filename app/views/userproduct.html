@@ -18,7 +18,7 @@
                   <th>Contactese</th>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="Producto in productoArreglo |filter: {username:$sessionStorage.currentUser.username}:true">
+                  <tr ng-repeat="Producto in productoArreglo |filter: {properties:{username:$sessionStorage.currentUser.username}}:true">
                     <td class="TableCenter">{{product.name}}</td>
                     <td class="TableCenter">{{product.description}}</td>
                     <td class="TableCenter">{{product.username}}</td>
