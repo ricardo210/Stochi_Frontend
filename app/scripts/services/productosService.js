@@ -1,7 +1,7 @@
 angular.module('Stochi.Services').factory('productoService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		var baseUrl = 'http://stochi-b.herokuapp.com/';
+		var baseUrl = 'https://stochi-b.herokuapp.com/';
 		return {
 				Getproducto: function(){
 					return $http.get(baseUrl + "v1/producto");
