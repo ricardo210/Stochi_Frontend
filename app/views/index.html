@@ -13,13 +13,13 @@
 
 						<!-- main col left -->
 						<div class="col-sm-5">
-							
-							<div class="panel panel-default" ng-show="!$sessionStorage.currentUser">
+
+							<div class="panel panel-default" ng-controller="loginController" ng-show="!$sessionStorage.currentUser">
 								<div class="panel-body">
 									<img src="/images/logo.png" width="60px" height="60px">
 									<p class="lead">¡Registrate y busca de todo!</p>
 									<input type="text" class="form-control" placeholder="Usuario" ng-model="user.username">
-									<input type="text" class="form-control" placeholder="Contraseña" ng-model="user.password">
+									<input type="password" class="form-control" placeholder="Contraseña" ng-model="user.password">
 									<button class="btn btn-default" type="submit" ng-click="register(user)"><h4>Registrarse</h4></button>
 								</p>
 							</div>
