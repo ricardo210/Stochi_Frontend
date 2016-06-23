@@ -1,7 +1,7 @@
 angular.module('Stochi.Services').factory('HomeService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		var baseUrl = 'http://localhost:8000/';
+		var baseUrl = 'http://stochi-b.herokuapp.com/';
 		return {
 				GetStudents: function(){
 					return $http.get(baseUrl + "v1/students");
