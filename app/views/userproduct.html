@@ -14,17 +14,15 @@
                 <thead>
                   <th>Nombre</th>
                   <th>Descripcion</th>
-                  <th>Vendedor</th>
-                  <th>Contactese</th>
+                  <th>informacion de contacto</th>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="Producto in productoArreglo |filter: {properties:{username:$sessionStorage.currentUser.username}}:true">
+                  <tr ng-repeat="producto in productoArreglo |filter: {properties:{username:$sessionStorage.currentUser.username}}:true">
                     <td class="TableCenter">{{product.name}}</td>
                     <td class="TableCenter">{{product.description}}</td>
-                    <td class="TableCenter">{{product.username}}</td>
                     <td class="TableCenter">{{product.contact}}</td>
-                    <th><button class="btn btn-primary pull-right" type="button">Borrar Producto</button></th>
-                    <th><button class="btn btn-primary pull-right" type="button">Modificar Producto</button></th>
+                    <th><button class="btn btn-primary pull-right" type="button" ng-click="deleteProducto(Producto)">Borrar Producto</button></th>
+                    <th><button class="btn btn-primary pull-right" type="button" ng-click="changeStateM()">Modificar Producto</button></th>
                   </tr>
                 </tbody>
               </table>

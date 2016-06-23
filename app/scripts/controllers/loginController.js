@@ -46,4 +46,17 @@ angular.module('Stochi.Controllers')
         });
       }
 
+      $scope.changeState()=function(){
+          $state.go('index');
+      }
+      $scope.changeStateU()=function(){
+          $state.go('perfil');
+      }
+      $scope.changeStateP()=function(){
+          $state.go('usrproductos');
+      }
+      $scope.changeStateC()=function(){
+          $state.go('create');
+      }
+
   }]);

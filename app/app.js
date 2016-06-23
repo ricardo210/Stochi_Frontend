@@ -11,13 +11,29 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl: '/views/index.html',
 		controller: 'loginController'
 	})
+	.state('perfil', {
+		url: '/perfil',
+		templateUrl: '/views/perfil.html',
+		controller: 'perfilController'
+	})
 	.state('productos', {
 		url: '/productos',
 		templateUrl: '/views/producto.html',
 		controller: 'productosController',
-		name: "productos",
-		data: {
-			pageTitle: 'LogIn'
-		}
+	})
+	.state('usrproductos', {
+		url: '/usrproduct',
+		templateUrl: '/views/userproduct.html',
+		controller: 'productosController',
+	})
+	.state('update', {
+		url: '/update',
+		templateUrl: '/views/update.html',
+		controller: 'productosController',
+	})
+	.state('create', {
+		url: '/create',
+		templateUrl: '/views/create.html',
+		controller: 'productosController',
 	})
 }]);

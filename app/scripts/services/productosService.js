@@ -4,13 +4,16 @@ angular.module('Stochi.Services').factory('productoService', ['$http',
 		var baseUrl = 'https://stochi-b.herokuapp.com/';
 		return {
 				Getproducto: function(){
-					return $http.get(baseUrl + "v1/producto");
+					return $http.get(baseUrl + "v1/products");
 				},
 				Postproducto: function(payload){
-					return $http.post(baseUrl + "v2/producto", payload);
+					return $http.post(baseUrl + "v1/product", payload);
 				},
-				Deleteproducto: function(nombre){
-					return $http.delete(baseUrl + "v4/producto/" + name);
+				Deleteproducto: function(payload,id){
+					return $http.delete(baseUrl + "v1/productd/" + id,payload);
+				},
+				Deleteproducto: function(payload,id){
+					return $http.delete(baseUrl + "v1/productu/" + id,payload);
 				}
 	    };
 }]);
