@@ -1,16 +1,16 @@
 {
   "name": "Stochi",
   "authors": [
-    "Ricardo Jose Rodriguez","Rene Flores"
+    "Ricardo Jose Rodriguez and Rene Flores"
   ],
   "description": "Angular base web page",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
-    "angular"
+    "Angular",
   ],
   "license": "none",
-  "homepage": "none",
+  "homepage": "index.html",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -7,7 +7,7 @@
     "node": "4.1.1"
   },
   "dependencies": {
-    "bower": "^1.6.9",
+    "bower": "^3.3.6",
     "gulp": "^3.9.0",
     "gulp-debug": "^2.1.2",
     "gulp-inject": "^3.0.0",
