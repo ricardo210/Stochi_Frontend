@@ -1,4 +1,4 @@
-<div ng-controller="productosController" ng-class="viewBackground">
+<div ng-controller="productController" ng-class="viewBackground">
   <div id="bodyproducto">
     <div class="container" ng-init="loadproducto()">
       <div id="dived">
@@ -19,12 +19,12 @@
                   <th>Prioridad</th>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="Producto in productoArreglo">
+                  <tr ng-repeat="Sobre el producto:">
                     <td class="TableCenter"> <input type="checkbox" calibri-label="..." id="check" name="check1"> </td>
-                    <td class="TableCenter">{{producto.name}}</td>
-                    <td class="TableCenter">{{producto.description}}</td>
-                    <td class="TableCenter">{{producto.ingredient}}</td>
-                    <td class="TableCenter">{{producto.ingredient}}</td>
+                    <td class="TableCenter">{{product.name}}</td>
+                    <td class="TableCenter">{{product.description}}</td>
+                    <td class="TableCenter">{{product.username}}</td>
+                    <td class="TableCenter">{{product.contact}}</td>
                   </tr>
                 </tbody>
               </table>
