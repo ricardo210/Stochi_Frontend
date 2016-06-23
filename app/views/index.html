@@ -12,9 +12,9 @@
 					<div class="row">
 
 						<!-- main col left -->
-						<div class="col-sm-5">
+						<div class="col-sm-5" ng-show="!$sessionStorage.currentUser">
 
-							<div class="panel panel-default" ng-controller="loginController" ng-show="!$sessionStorage.currentUser">
+							<div class="panel panel-default">
 								<div class="panel-body">
 									<img src="/images/logo.png" width="60px" height="60px">
 									<p class="lead">¡Registrate y busca de todo!</p>
@@ -25,7 +25,7 @@
 							</div>
 						</div>
 
-						<div class="panel panel-default" ng-show="!$sessionStorage.currentUser">
+						<div class="panel panel-default">
 							<div class="panel-heading"><h4>¿Qué es STOCHI?</h4></div>
 							<div class="panel-body">
 								Stochi es un sitio en el cuál podrás hacer venta de objetos! Solo búscalo e inscribite a ver a cuanto lo obtienes! Quieres comprar algo?
